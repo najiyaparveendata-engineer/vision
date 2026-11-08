@@ -1,0 +1,18 @@
+{
+	"name": "LS_KV",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://adlsdevcsvsrc001.dfs.core.windows.net",
+			"accountKey": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "kv001",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "sourcekey001"
+			}
+		}
+	}
+}
